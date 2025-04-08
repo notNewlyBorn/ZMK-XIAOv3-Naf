@@ -24,12 +24,56 @@
         };
     };
 
+		macros {
+			mac_swed_a: mac_swed_a {
+					label = "mac_swed_a";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings = <&macro_tap>, <&kp RA(A)>;
+			};
+
+			mac_swed_o: mac_swed_o {
+					label = "mac_swed_o";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings = <&macro_tap>, <&kp RA(U) &kp O>;
+			};
+
+			mac_swed_aa: mac_swed_aa {
+					label = "mac_swed_aa";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings = <&macro_tap>, <&kp RA(U) &kp A>;
+			};
+
+			mac_swed_capa: mac_swed_capa {
+					label = "mac_swed_capa";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings = <&macro_tap>, <&kp LS(RA(A))>;
+			};
+
+			mac_swed_capo: mac_swed_capo {
+					label = "mac_swed_capo";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings = <&macro_tap>, <&kp RA(U) &kp LS(O)>;
+			};
+
+			mac_swed_capaa: mac_swed_capaa {
+					label = "mac_swed_capaa";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings = <&macro_tap>, <&kp RA(U) &kp LS(A)>;
+			};
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp ESC     &kp N1                         &kp N2               &kp N3                   &kp N4          &kp N5                   &kp N6                       &kp N7          &kp N8       &kp N9  &kp N0  &mt LA(BACKSPACE) BACKSPACE
+&kp ESC     &kp F1                         &kp F2               &kp F3                   &kp F4          &kp F5                   &kp F6                       &kp F8          &kp F10       &kp F11  &kp F12  &mt LA(BACKSPACE) BACKSPACE
 &kp TAB     &mt SINGLE_QUOTE SINGLE_QUOTE  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt LG(P) P     &kp Y                    &mt LG(F) F                  &kp G           &kp C        &kp R   &kp L   &mt LA(BACKSPACE) BACKSPACE
 &kp ESCAPE  &kp A                          &kp O                &kp E                    &kp U           &mt LG(LA(J)) I          &kp D                        &kp H           &kp T        &kp N   &kp S   &mt LS(MINUS) MINUS
 &kp LCTRL   &mt COLON SEMICOLON            &kp Q                &kp J                    &kp K           &kp X                    &kp B                        &kp M           &kp W        &kp V   &kp Z   &kp SLASH
@@ -40,23 +84,23 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans                         &trans          &trans        &trans                           &trans                 &trans
-&kp TAB     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET                      &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS             &kp RIGHT_PARENTHESIS  &trans
-&trans      &trans           &trans        &trans        &kp EQUAL     &kp GRAVE       &mt LA(LEFT_ARROW) LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp QUESTION           &kp ENTER
-&trans      &trans           &trans        &trans        &kp PLUS      &kp TILDE       &kp PIPE                       &trans          &trans        &trans                           &trans                 &trans
-                                                         &trans                                                       &trans
-                             &trans        &trans        &trans        &trans          &trans                         &trans          &trans        &trans
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &trans                         &trans          &trans           &trans                           &trans                 &trans
+&kp TAB     &kp EXCLAMATION  &kp AT_SIGN     &kp HASH      		 &kp DOLLAR    &kp PERCENT     &kp CARET                      &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS             &kp RIGHT_PARENTHESIS  &trans
+&trans      &mac_swed_a			 &mac_swed_o	   &mac_swed_aa  		 &kp EQUAL     &kp GRAVE       &mt LA(LEFT_ARROW) LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp QUESTION           &kp ENTER
+&trans      &mac_swed_capa   &mac_swed_capo  &mac_swed_capaa   &kp PLUS      &kp TILDE       &kp BACKSLASH  								&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  								&kp RIGHT_BRACKET  		 &trans
+                                                         			 &trans                                                       &trans
+                             &trans        	 &trans        		 &trans        &trans          &trans                         &trans          &trans        	 &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans       &trans  &trans  &trans  &trans       &trans    &trans         &trans          &trans           &trans            &trans             &trans
-&trans       &trans  &trans  &trans  &trans       &trans    &kp NUMBER_6   &kp N7          &kp N8           &kp N9            &kp N0             &kp F12
-&trans       &trans  &trans  &trans  &trans       &trans    &kp NUMBER_1   &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4      &kp N5             &kp ENTER
-&bootloader  &trans  &trans  &trans  &trans       &trans    &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans       &trans  &trans  &trans  &trans       &trans    &trans         &trans          						&trans           &trans            &trans             &trans
+&trans       &trans  &trans  &trans  &trans       &trans    &kp N6   			 &kp N7          						&kp N8           &kp N9            &kp N0             &kp F12
+&trans       &trans  &trans  &trans  &trans       &trans    &kp N1   			 &kp N2    									&kp N3     			 &kp N4      			 &kp N5             &kp ENTER
+&bootloader  &trans  &trans  &trans  &trans       &trans    &kp PIPE  		 &kp LG(LS(NUMBER_3))  		 	&trans  		 		 &trans  		 			 &trans  					  &trans
                                      &bootloader                           &bootloader
-                     &trans  &trans  &trans       &trans    &trans         &trans          &trans           &trans
+                     &trans  &trans  &trans       &trans    &trans         &trans          						&trans           &trans
             >;
         };
     };
