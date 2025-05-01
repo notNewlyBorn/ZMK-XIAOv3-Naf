@@ -75,10 +75,10 @@
             bindings = <
 &kp TAB     &kp F1                         &kp F2               &kp F3                   &kp F4          &kp F5                   &kp F6                       &kp F8          &kp F10      &kp F11 &kp F12 &mt LA(BACKSPACE) BACKSPACE
 &kp TAB     &mt SINGLE_QUOTE SINGLE_QUOTE  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt LG(P) P     &kp Y                    &mt LG(F) F                  &kp G           &kp C        &kp R   &kp L   &mt LA(BACKSPACE) BACKSPACE
-&kp ESCAPE  &kp A                          &kp O                &kp E                    &kp U           &kp I          		  &kp D                        &hold_tap LEFT_COMMAND H       &kp T        &kp N   &kp S   &mt LS(MINUS) MINUS
+&mt LEFT_SHIFT ESCAPE  &kp A               &kp O                &kp E                    &kp U           &kp I          		  &kp D                        &hold_tap LEFT_COMMAND H       &kp T        &kp N   &kp S   &mt LS(MINUS) MINUS
 &kp LCTRL   &mt COLON SEMICOLON            &kp Q                &kp J                    &kp K           &kp X                    &kp B                        &kp M           &kp W        &kp V   &kp Z   &kp SLASH
                                                                                          &mkp LCLK		                                                   &mkp RCLK
-                                           &kp RIGHT_ALT        &kp LGUI                 &sk LCTRL       &sk LEFT_SHIFT           &sk RIGHT_SHIFT  			   &sk RCTRL    &lt 1 SPACE     &mo 2
+                                           &kp RIGHT_ALT        &sl 2             &sk LCTRL       &sk LA(LC(LEFT_SHIFT))          &sk LA(LC(LEFT_SHIFT)) 	   &sk RIGHT_SHIFT    &lt 1 SPACE     &hold_tap LS(LEFT_GUI) LEFT_GUI
             >;
         };
 
