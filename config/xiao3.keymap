@@ -96,7 +96,7 @@
         layer_2 {
             bindings = <
 &trans       &trans  &trans  &trans  &trans       &trans    &trans         &trans          						&trans           &trans            &trans             &trans
-&trans       &trans  &trans  &trans  &trans       &trans    &kp N6   			 &kp N7          						&kp N8           &kp N9            &kp N0             &kp F12
+&trans       &trans  &trans  &trans  &trans       &trans    &kp N6   			 &kp N7          						&kp N8           &kp N9            &kp N0             &kp PRINTSCREEN
 &trans       &trans  &trans  &trans  &trans       &trans    &kp N1   			 &kp N2    									&kp N3     			 &kp N4      			 &kp N5             &kp ENTER
 &bootloader  &trans  &trans  &trans  &trans       &trans    &kp PIPE  		 &kp LG(LS(NUMBER_3))  		 	&trans  		 		 &trans  		 			 &trans  					  &trans
                                      &bootloader                           &bootloader
