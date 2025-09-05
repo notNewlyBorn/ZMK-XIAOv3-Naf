@@ -78,7 +78,7 @@
 &mt LEFT_SHIFT ESCAPE  &kp A               &kp O                &kp E                    &kp U           &kp I          		  &kp D                        &hold_tap LEFT_COMMAND H       &kp T        &kp N   &kp S   &mt RIGHT_SHIFT MINUS
 &kp LCTRL   &mt COLON SEMICOLON            &kp Q                &kp J                    &kp K           &kp X                    &kp B                        &kp M           &kp W        &kp V   &kp Z   &kp SLASH
                                                                                          &mkp LCLK		                                                   &mkp RCLK
-                                           &kp RIGHT_ALT        &sk LEFT_GUI              &sk LCTRL       &sk LA(LC(LEFT_SHIFT))          &sk LA(LC(LEFT_SHIFT)) 	   &sk RCTRL    &lt 1 SPACE     &sl 2
+                                           &mt RIGHT_ALT SPACE      &sk LEFT_GUI         &sk LCTRL       &sk LA(LC(LEFT_SHIFT))          &sk LA(LC(LEFT_SHIFT)) 	   &sk RCTRL    &lt 1 SPACE     &sl 2
             >;
         };
 
