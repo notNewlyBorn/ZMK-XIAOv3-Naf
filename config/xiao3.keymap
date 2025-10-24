@@ -74,7 +74,7 @@
         default_layer {
             bindings = <
 &kp TAB     &kp F1                         &kp F2               &kp F3                   &kp F4          &kp F5                   &kp F6                       &kp F8          &kp F10      &kp F11 &kp F12 &mt LA(BACKSPACE) BACKSPACE
-&kp TAB     &mt SINGLE_QUOTE SINGLE_QUOTE  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt LG(P) P     &kp Y                    &mt LG(F) F                  &kp G           &kp C        &kp R   &kp L   &mt LA(BACKSPACE) BACKSPACE
+&kp TAB     &mt SINGLE_QUOTE SINGLE_QUOTE  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &kp P     		 &kp Y                    &mt LG(F) F                  &kp G           &kp C        &kp R   &kp L   &mt LA(BACKSPACE) BACKSPACE
 &mt LEFT_SHIFT ESCAPE  &kp A               &kp O                &kp E                    &kp U           &kp I          		  &kp D                        &hold_tap LEFT_COMMAND H       &kp T        &kp N   &kp S   &mt RIGHT_SHIFT MINUS
 &kp LCTRL   &mt COLON SEMICOLON            &kp Q                &kp J                    &kp K           &kp X                    &kp B                        &kp M           &kp W        &kp V   &kp Z   &kp SLASH
                                                                                          &mkp LCLK		                                                   &mkp RCLK
@@ -98,7 +98,7 @@
 &trans       &trans  &trans  &trans  &trans       &trans    &trans         &trans          						&trans           &trans            &trans             &trans
 &trans       &trans  &trans  &trans  &trans       &trans    &kp N6   			 &kp N7          						&kp N8           &kp N9            &kp N0             &kp LG(LS(N4))
 &trans       &trans  &trans  &trans  &trans       &trans    &kp N1   			 &kp N2    									&kp N3     			 &kp N4      			 &kp N5             &kp ENTER
-&bootloader  &trans  &trans  &trans  &trans       &trans    &kp PIPE  		 &kp LG(LS(NUMBER_3))  		 	&trans  		 		 &trans  		 			 &trans  					  &trans
+&trans  &trans  &trans  &trans  &trans       &trans    &kp PIPE  		 &kp LG(LS(NUMBER_3))  		 	&trans  		 		 &trans  		 			 &trans  					  &trans
                                      &bootloader                           &bootloader
                      &trans  &trans  &trans       &trans    &trans         &trans          						&trans           &trans
             >;
